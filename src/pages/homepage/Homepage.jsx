@@ -1,6 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import { NavBar } from '../../components/navbar/NavBar';
+
+import './homepage.scss';
 
 export const Homepage = () => {
-  return <></>;
+  return (
+    <>
+      <div className="homepage">
+        <NavBar showLPLinks={true} />
+      </div>
+    </>
+  );
 };

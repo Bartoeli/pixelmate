@@ -5,6 +5,8 @@ import { Detail } from './pages/detail/Detail.jsx';
 import { Homepage } from './pages/homepage/Homepage.jsx';
 import { List } from './pages/list/List.jsx';
 
+import './index.scss';
+
 function App() {
   return (
     <Router>
