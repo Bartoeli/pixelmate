@@ -12,13 +12,13 @@ export const MenuLogo = () => {
     <Link to="/" className="menu-logo">
       {location.pathname === '/' ? (
         <img
-          className="menu-logo"
+          className="menu-logo__img"
           src={Pixelmate_logo_claim_white}
           alt="Pixelmate logo"
         />
       ) : (
         <img
-          className="menu-logo"
+          className="menu-logo__img"
           src={Pixelmate_logo_claim_black}
           alt="Pixelmate logo"
         />

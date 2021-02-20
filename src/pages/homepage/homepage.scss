@@ -1,0 +1,29 @@
+/*
+Mobile Device
+0 - 576 px
+
+Medium Device
+577 - 992 px
+
+Desktop
+993 - 1.680 px
+
+Big screens
+1.681+ px
+*/
+
+//colors
+$c-primary: #0f33ff;
+$c-light: #ecefff;
+$c-secondary: #8e929f;
+$c-white: #ffffff;
+
+html {
+  max-width: 1680px;
+}
+body {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0;
+  padding: 0;
+}
