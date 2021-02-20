@@ -1,0 +1,17 @@
+//colors
+$c-primary: #0f33ff;
+$c-light: #ecefff;
+$c-secondary: #8e929f;
+$c-white: #ffffff;
+
+.navBar {
+  padding: 10px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+
+  @media (min-width: 768px) {
+    align-items: center;
+  }
+}

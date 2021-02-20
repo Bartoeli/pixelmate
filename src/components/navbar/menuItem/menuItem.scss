@@ -4,18 +4,27 @@ $c-light: #ecefff;
 $c-secondary: #8e929f;
 $c-white: #ffffff;
 
-.nav__menu-item {
+.menu-item {
   list-style-type: none;
   text-align: left;
   width: 100%;
   padding: 58px 1222px 0 0;
   cursor: pointer;
-}
 
-.menu-item__url {
-  text-decoration: none;
-  font: normal normal bold 14px/18px;
-  letter-spacing: 0px;
-  color: $c-white;
-  opacity: 1;
+  &__url {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    opacity: 1;
+
+    &--black {
+      color: black;
+    }
+
+    &--white {
+      color: $c-white;
+    }
+  }
 }
