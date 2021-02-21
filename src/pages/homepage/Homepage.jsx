@@ -12,7 +12,7 @@ export const Homepage = () => {
   return (
     <>
       <div className="homepage">
-        <NavBar showLPLinks={true} />
+        <NavBar showNavLinks={true} />
         <Main />
         <References />
         <About />

@@ -37,7 +37,7 @@ export const TheMenu = (props) => {
         </button>
         {menuOpen && (
           <ul className="theMenu__menu-items">
-            {props.showLPLinks && (
+            {props.showNavLinks && (
               <>
                 <MenuItem
                   id="designeri"
@@ -62,7 +62,7 @@ export const TheMenu = (props) => {
       </nav>
       <nav className="theMenu-desktop">
         <ul className="theMenu__menu-items theMenu__menu-items--desktop">
-          {props.showLPLinks && (
+          {props.showNavLinks && (
             <>
               <MenuItem
                 id="designeri"

@@ -9,7 +9,7 @@ export const NavBar = (props) => {
   return (
     <header className="navBar">
       <MenuLogo />
-      <TheMenu showLPLinks={props.showLPLinks} />
+      <TheMenu showNavLinks={props.showNavLinks} />
     </header>
   );
 };
