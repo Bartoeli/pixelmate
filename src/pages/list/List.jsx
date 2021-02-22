@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+
+import './list.scss';
 
 import { Input } from '../../components/forms/input/Input';
 import { Button } from './../../components/button/Button.jsx';
@@ -8,18 +11,11 @@ import { Footer } from '../../components/footer/Footer';
 
 export const List = () => {
   const [search, setSearch] = useState('');
+  const [searchResult, setSearchResult] = useState([]);
   const [data, setData] = useState([]);
+  let { key } = useParams();
 
-  const keyList = [
-    'username',
-    'name',
-    'email',
-    'street',
-    'suite',
-    'city',
-    'zipcode',
-    'id',
-  ];
+  console.log(key);
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -45,28 +41,47 @@ export const List = () => {
     );
   }
 
+  useEffect(() => {
+    const results = designers.filter((designer) =>
+      designer.name.toLowerCase().includes(search),
+    );
+    setSearchResult(results);
+  }, [search]);
+
   return (
     <>
-      <NavBar showNavLinks={true} />
-      <div></div>
-      <div>
-        <form>
-          <Input
-            type="search"
-            value={search}
-            placeholder="Váš email"
-            setChanged={setSearch}
-          />
-          <Button
-            className="button--primary"
-            textBtn="Vyhledat"
-            onClick={() => {}}
-            type="submit"
-          />
-        </form>
+      <div className="list">
+        <NavBar showNavLinks={true} />
+        <div className="list__placeholder"></div>
+        <div className="list__form">
+          <form
+            className="list__form-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              return searchResult;
+            }}
+          >
+            <div className="list__form-search">
+              <Input
+                type="search"
+                value={search}
+                placeholder="Hledat"
+                setChanged={setSearch}
+              />
+            </div>
+            <div className="list__form-button">
+              <Button
+                className="button--primary"
+                textBtn="Vyhledat"
+                onClick={() => {}}
+                type="submit"
+              />
+            </div>
+          </form>
+        </div>
+        <div className="list__designers">{designers}</div>
+        <Footer />
       </div>
-      <div>{designers}</div>
-      <Footer />
     </>
   );
 };

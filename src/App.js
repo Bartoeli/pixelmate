@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/detail">
+        <Route path="/detail/:key">
           <Detail />
         </Route>
         <Route path="/list">

@@ -1,0 +1,34 @@
+//colors
+$c-primary: #0f33ff;
+$c-light: #ecefff;
+$c-secondary: #8e929f;
+$c-white: #ffffff;
+
+.designer {
+  width: 90%;
+  height: 512px;
+  box-shadow: 0px 20px 70px #16181c1a;
+  border-radius: 25px 25px 25px 0px;
+  background-color: $c-white;
+  margin-top: 50px;
+
+  &__username {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 33px 30px 0 30px;
+  }
+
+  &__name {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 34px;
+    padding: 0 33px;
+  }
+
+  &__email {
+    font-size: 20px;
+    color: $c-secondary;
+    line-height: 30px;
+    padding: 0 33px;
+  }
+}

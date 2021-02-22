@@ -10,7 +10,7 @@ export const MenuItem = (props) => {
       <a
         href={`#${props.id}`}
         className={
-          location.pathname === '/#/'
+          location.pathname === '/'
             ? 'menu-item__url menu-item__url--white'
             : 'menu-item__url menu-item__url--black'
         }

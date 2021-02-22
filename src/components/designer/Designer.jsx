@@ -1,14 +1,16 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
+import './designer.scss';
+
 import { Button } from './../button/Button.jsx';
 
 import map_pin from './../../images/icons/map_pin.svg';
 
 export const Designer = (props) => {
-  const { push } = useHistory;
+  const { push } = useHistory();
   return (
-    <div>
+    <div className="designer">
       <p className="designer__username">{props.username}</p>
       <p className="designer__name">{props.name}</p>
       <p className="designer__email">{props.email}</p>

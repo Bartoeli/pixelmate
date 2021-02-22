@@ -1,0 +1,49 @@
+//colors
+$c-primary: #0f33ff;
+$c-light: #ecefff;
+$c-secondary: #8e929f;
+$c-white: #ffffff;
+
+.list {
+  position: relative;
+
+  &__placeholder {
+    height: 120px;
+    background-color: $c-white;
+  }
+
+  &__form {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: $c-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    z-index: 2;
+    box-shadow: 0px 4px 35px #0000001f;
+
+    &-form {
+      width: 80%;
+    }
+
+    &-search {
+      height: 30px;
+      margin-bottom: 8px;
+    }
+
+    &-button {
+      height: 30px;
+    }
+  }
+
+  &__designers {
+    background-image: linear-gradient(#ecefff66, #ecefff);
+    padding-top: 50px;
+    width: 100%;
+  }
+}

@@ -67,15 +67,11 @@ export const TheMenu = (props) => {
           {props.showNavLinks && (
             <>
               <MenuItem
-                id="designeri"
+                id="list"
                 text="Designéři"
                 onSelect={handleSelectItem}
               />
-              <MenuItem
-                id="portfolio"
-                text="Portfolio"
-                onSelect={handleSelectItem}
-              />
+              <MenuItem id=" " text="Portfolio" onSelect={handleSelectItem} />
             </>
           )}
           <div className="theMenu-desktop__button">
