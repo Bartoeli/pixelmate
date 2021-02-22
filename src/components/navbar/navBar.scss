@@ -10,8 +10,10 @@ $c-white: #ffffff;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: none;
   width: 100%;
+  position: fixed;
 
   @media (min-width: 768px) {
     align-items: center;

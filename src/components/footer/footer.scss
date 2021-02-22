@@ -1,0 +1,39 @@
+//colors
+$c-primary: #0f33ff;
+$c-light: #ecefff;
+$c-secondary: #8e929f;
+$c-white: #ffffff;
+
+.footer {
+  background-image: linear-gradient(#161b40, #140f29);
+  padding: 16px 0;
+  margin-top: 32px;
+
+  &__rights {
+    color: #c7c7c7;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &__logo {
+    height: 22px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    &-img {
+      height: 100%;
+    }
+  }
+
+  &__gdpr {
+    width: 191px;
+    margin: 24px auto;
+
+    &-link {
+      color: #c7c7c7;
+      font-size: 12px;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { NavBar } from '../../components/navbar/NavBar';
 import { Main } from '../../components/main/Main';
 
 import './homepage.scss';
@@ -12,7 +11,6 @@ export const Homepage = () => {
   return (
     <>
       <div className="homepage">
-        <NavBar showNavLinks={true} />
         <Main />
         <References />
         <About />

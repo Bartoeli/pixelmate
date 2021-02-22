@@ -51,17 +51,19 @@ export const TheMenu = (props) => {
                 />
               </>
             )}
-            <Button
-              className="button--secondary"
-              textBtn="Přihlásit se"
-              onClick={openModal}
-              type="button"
-            />
+            <div className="theMenu-mobile__button">
+              <Button
+                className="button--secondary-white"
+                textBtn="Přihlásit se"
+                onClick={openModal}
+                type="button"
+              />
+            </div>
           </ul>
         )}
       </nav>
       <nav className="theMenu-desktop">
-        <ul className="theMenu__menu-items theMenu__menu-items--desktop">
+        <ul className="theMenu__menu-items--desktop">
           {props.showNavLinks && (
             <>
               <MenuItem
@@ -76,12 +78,14 @@ export const TheMenu = (props) => {
               />
             </>
           )}
-          <Button
-            className="button--secondary"
-            textBtn="Přihlásit se"
-            onClick={openModal}
-            type="button"
-          />
+          <div className="theMenu-desktop__button">
+            <Button
+              className="button--secondary-white"
+              textBtn="Přihlásit se"
+              onClick={openModal}
+              type="button"
+            />
+          </div>
         </ul>
       </nav>
     </>

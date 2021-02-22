@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './input.scss';
+
 export const Input = (props) => {
   return (
     <>
-      <label className="input__label">
+      <label className="input">
         {props.popis}
         <input
           className="input__input"

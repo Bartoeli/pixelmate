@@ -23,12 +23,14 @@ export const Designer = (props) => {
         </div>
         <a href="mailto:{props.email}">{props.email}</a>
       </div>
-      <Button
-        className="button--designer"
-        textBtn="Zobrazit profil"
-        onClick={() => push(`/detail/${props.key}`)}
-        type="button"
-      />
+      <div>
+        <Button
+          className="button--secondary-blue"
+          textBtn="Zobrazit profil"
+          onClick={() => push(`/detail/${props.key}`)}
+          type="button"
+        />
+      </div>
     </div>
   );
 };

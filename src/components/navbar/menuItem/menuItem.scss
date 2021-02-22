@@ -6,9 +6,9 @@ $c-white: #ffffff;
 
 .menu-item {
   list-style-type: none;
-  text-align: left;
+  text-align: right;
   width: 100%;
-  padding: 58px 1222px 0 0;
+  padding: 16px 24px 0 0;
   cursor: pointer;
 
   &__url {
@@ -26,5 +26,10 @@ $c-white: #ffffff;
     &--white {
       color: $c-white;
     }
+  }
+
+  @media (min-width: 992px) {
+    padding: 0;
+    text-align: left;
   }
 }

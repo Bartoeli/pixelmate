@@ -1,10 +1,15 @@
 .menu-logo {
-  width: 180px;
+  width: 130px;
   height: 35px;
-  margin: 0;
+  margin-left: 24px;
   padding: 0;
+  display: block;
 
   &__img {
     width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    width: 180px;
   }
 }

@@ -1,0 +1,62 @@
+//colors
+$c-primary: #0f33ff;
+$c-light: #ecefff;
+$c-secondary: #8e929f;
+$c-white: #ffffff;
+
+.references {
+  width: 90%;
+  margin: 0 auto;
+  background-color: $c-white;
+  padding-top: 32px;
+
+  &__logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -64px;
+    z-index: 2;
+    background-color: $c-white;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+      top: -99px;
+      height: 134px;
+      box-shadow: 0px 4px 35px #0000001f;
+    }
+  }
+
+  &__logo {
+    margin: 16px auto;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    width: 76%;
+    height: 134px;
+  }
+}
+
+.ct {
+  height: 22px;
+}
+
+.deloitte {
+  height: 20px;
+}
+
+.bosch {
+  height: 23px;
+}
+
+.muzeum {
+  height: 44px;
+}
+
+.cemix {
+  height: 21px;
+}
