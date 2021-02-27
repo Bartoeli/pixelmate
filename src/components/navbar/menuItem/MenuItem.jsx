@@ -1,14 +1,14 @@
 import React from 'react';
 import './menuItem.scss';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 export const MenuItem = (props) => {
-  const location = useLocation;
+  const location = useLocation();
 
   return (
     <li className="menu-item">
-      <a
-        href={`#${props.id}`}
+      <Link
+        to={`#${props.id}`}
         className={
           location.pathname === '/'
             ? 'menu-item__url menu-item__url--white'
@@ -17,7 +17,7 @@ export const MenuItem = (props) => {
         onClick={() => props.onSelect()}
       >
         {props.text}
-      </a>
+      </Link>
     </li>
   );
 };
